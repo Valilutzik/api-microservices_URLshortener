@@ -13,11 +13,11 @@ dotenv.config();
 var url = process.env.MONGOLAB_URI;
 var port = process.env.PORT || 8080;
 
-app.get("/:name", function(req, res)
+app.get(["/:name", "/http://:name", "/https://:name"], function(req, res)
     {
         
         var name = req.params.name;
-
+        console.log(name);
             MongoClient.connect(url, function(err, db)
             {
                 if (err) throw err;
