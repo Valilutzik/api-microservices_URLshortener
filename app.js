@@ -68,4 +68,9 @@ app.get("/:name", function(req, res)
             });
     });
 
+app.get("/", function(req, res)
+    {
+        res.end("<div style='text-align:center;'><h1 style='text-center;'>Welcome to the URL Shortner!</h1><br/><div>Enter a URL after the / in the URL Tab (example: https://cryptic-tor-97079.herokuapp.com/google.com)</div></div>")
+    });
+
 http.createServer(app).listen(port);    
