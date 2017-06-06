@@ -1,0 +1,19 @@
+{
+  "name": "urlshort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compare-urls": "^1.0.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.28",
+    "nice-is-url": "^1.0.2",
+    "shortid": "^2.2.8"
+  }
+}
